@@ -16,6 +16,7 @@ const SmurfForm = () => {
     }
 
     const submitForm = e => {
+        addSmurf(smurfInfo)
         e.preventDefault();
         addSmurf(smurfInfo)
         axios
@@ -31,32 +32,34 @@ const SmurfForm = () => {
         <div className='form-wrap'>
             <form onSubmit={submitForm}>
                 <label htmlFor='name'>
-                    Name
                     <input
                     type='text'
+                    placeholder='Name'
                     name='name'
                     value={smurfInfo.name}
                     onChange={handleChanges}
                     />
-                </label>
+                </label><br/>
                 <label htmlFor='name'>
-                    Age
                     <input
                     type='number'
+                    placeholder='Age'
                     name='age'
                     value={smurfInfo.age}
                     onChange={handleChanges}
                     />
-                </label>
+                </label><br/>
                 <label htmlFor='height'>
-                    Height
                     <input
                     type='number'
+                    placeholder='Height'
                     name='height'
                     value={smurfInfo.height}
                     onChange={handleChanges}
                     />
-                </label>
+                </label><br/>
+
+            <button>Add Smurf</button>
             </form>
 
         </div>

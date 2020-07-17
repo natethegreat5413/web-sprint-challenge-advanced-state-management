@@ -1,3 +1,31 @@
+body{
+  background-image: url('../smurf.jpg');
+  background-size: cover;
+}
+
 .App {
   text-align: center;
+  
+
+}
+
+.card{
+  width: 15%;
+  background-color: rgb(59, 230, 236);
+  padding: 5px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  border-radius: 20px;
+}
+
+input{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+button{
+  margin: 5px;
+  padding: 5px;
+  border-radius: 5px;
 }
